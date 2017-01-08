@@ -28,6 +28,9 @@
 #ifndef KINEMATICS_H_ONCE
 #define KINEMATICS_H_ONCE
 
+/* JPC CoreXY kilematics test. Comment for cartesian*/
+#define COREXY
+
 /*
  * Global Scope Functions
  */
