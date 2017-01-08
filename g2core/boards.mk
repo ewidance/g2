@@ -26,6 +26,30 @@
 
 
 ##########
+# GTwo + Arduino DUE configs:
+
+ifeq ("$(CONFIG)","proxxon")
+    ifeq ("$(BOARD)","NONE")
+        BOARD=GTwo
+    endif
+    SETTINGS_FILE="settings_proxxon.h"
+endif
+
+ifeq ("$(CONFIG)","corexylaser")
+    ifeq ("$(BOARD)","NONE")
+        BOARD=GTwo
+    endif
+    SETTINGS_FILE="settings_corexylaser.h"
+endif
+
+ifeq ("$(CONFIG)","caferacer2")
+    ifeq ("$(BOARD)","NONE")
+        BOARD=GTwo
+    endif
+    SETTINGS_FILE="settings_caferacer2.h"
+endif
+
+##########
 # V9-based configs:
 
 ifeq ("$(CONFIG)","ShapeokoDualY")
